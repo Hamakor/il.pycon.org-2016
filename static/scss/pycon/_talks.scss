@@ -344,3 +344,42 @@ small.workshop-time {
     margin-left: 0.5em;
   }
 }
+
+.rounded {
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+h1, h2, h3 {
+ text-align: center;
+}
+
+.keynote, .presentation {
+ text-align: center;
+ img {
+   width: 100%;
+ }
+}
+
+.speaker {
+ display: inline-block;
+ width: 25%;
+ margin: 0 1em;
+ img {
+   width: 80%;
+ }
+}
+
+.talks {
+  h2 {
+     font-size: 28px;
+     margin-top: 1ex;
+     margin-bottom: 0.5ex;
+  }
+  h3 {
+     font-size: 24px;
+     margin-top: 1ex;
+     margin-bottom: 0.2ex;
+  }
+  h4 { font-size: 20px; margin: 0; }
+}

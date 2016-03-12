@@ -27,12 +27,51 @@ block vars
   - var activePage = "workshops"
 
 block viewport
-  .container
-    h1 Our speakers
-    
+  .claim
+    .container
+       p.
+         Watch this space for keynotes and talks to be revealed
+
     //-  Iterate over workshops object (loaded in gulpfile from data/workshops.json)
     //-  and render mixin talk() (see above)
-    each speaker, index in speakers
+    //-each speaker, index in speakers
       +talk(speaker[0])
       +talk(speaker[1])
-  
+
+  .container.talks
+    h1 Keynotes
+    .keynote
+      .speaker
+        h3 Ola Sitartska
+        img.rounded(src=pageUrl("static/images/speakers/ola_sitarska.jpg"),
+                    alt="Ola Sitarska")
+      .speaker
+        h3 Ola Sendecka
+        img.rounded(src=pageUrl("static/images/speakers/ola_sendecka.jpg"),
+                    alt="Ola Sendecka")
+
+      h4 Growing Community That Makes a Difference
+
+    .keynote
+      .speaker
+        h3 Coming Soon
+        img.rounded(src=pageUrl("static/images/speakers/default_male.png"),
+                    alt="Stay Tuned")
+      h4 To Be Announced
+
+    .keynote
+      .speaker
+        h3 Coming Soon
+        img.rounded(src=pageUrl("static/images/speakers/default_male.png"),
+                    alt="Stay Tuned")
+      h4 To Be Announced
+
+    h1 Presentations
+
+    .presentation
+      .speaker
+        h3 Could it be you?
+        img.rounded(src=pageUrl("static/images/speakers/default_male.png"),
+                    alt="Stay Tuned")
+      h4 #[a(href="http://goo.gl/forms/iEBqCcqFtI") Yes it Could]!
+
