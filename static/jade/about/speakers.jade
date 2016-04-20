@@ -6,20 +6,26 @@ mixin talk(workshop)
   .workshop
     h3
       = workshop.title
-      small 
-        | by 
-      normal
-        = workshop.name
-        // TBD: .avatar(src=avatar(workshop.avatar), alt='Photo of ' + workshop.name)
+      if workshop.name
+        small
+            | by 
+        normal
+            = workshop.name
+
+    if workshop.avatar
+        img.avatar(src=avatar(workshop.avatar),alt='')
+    if workshop.avatar2
+        img.avatar(src=avatar(workshop.avatar2),alt='')
 
     .misc
       small
         = workshop.time
-        |  Track: 
-        = workshop.track 
+        if workshop.track
+            |  Track:
+            = workshop.track
 
     if workshop.bio
-        h4 Bio 
+        h4 Bio
             if workshop.github
                 a.social.github(href="https://github.com/" + workshop.github)
                     .fa.fa-github
@@ -27,6 +33,17 @@ mixin talk(workshop)
                 a.social.twitter(href="https://twitter.com/" + workshop.twitter)
                     .fa.fa-twitter
         != md(workshop.bio)
+
+    if workshop.bio2
+        h4 Bio 
+            if workshop.github2
+                a.social.github(href="https://github.com/" + workshop.github2)
+                    .fa.fa-github
+            if workshop.twitter2
+                a.social.twitter(href="https://twitter.com/" + workshop.twitter2)
+                    .fa.fa-twitter
+        != md(workshop.bio2)
+
     if workshop.abstract
         h4 Abstract
         != md(workshop.abstract)
