@@ -458,7 +458,8 @@
     "bio": "Irina is a PhD student in Mechanical Engineering at Brno University of Technology (Czech Republic) and an employee of Red Hat for the past two years. As a member of QE team, Irina is engaged in testing of  Red Hat Update Infrastructure (RHUI) product and testing of RHEL images in the cloud.",
     "company": "Red Hat",
     "twitter": "",
-    "github": "alexxa"
+    "github": "alexxa",
+    "slides": "irina-igulina.pdf"
   }
   ], [
   {
@@ -581,14 +582,15 @@
   {
     "time": "16:15 – 17:00",
     "track": "",
-    "name": "",
+    "name": "Shai Berger and Doron Fediuck",
     "avatar": "",
     "title": "Conference closing session",
     "abstract": "",
     "bio": "",
     "company": "",
     "twitter": "",
-    "github": ""
+    "github": "",
+    "slides": "closing-session.pdf"
   }
  ]
 ]
